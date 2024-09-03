@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senses Essence - Perfume Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Modal Overlay -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-btn">&times;</span>
+            <img src="ig1.jfif" alt="Featured Perfume">
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <marquee behavior="scroll" direction="left">Senses Essence - Discover Your Signature Scent</marquee>
+    </header>
+
+    <main>
+        <!-- Banner Section -->
+        <section id="home">
+            <div class="banner">
+                <img src="ig.png" alt="Banner Image">
+            </div>
+        </section>
+
+        <!-- Perfume Collection -->
+        <section class="collection">
+            <div class="perfume">
+                <img src="image11.jpg" alt="Perfume 1">
+                <h3>Elegance</h3>
+                <p>Graceful and luxurious.</p>
+            </div>
+            <div class="perfume">
+                <img src="image6.webp" alt="Perfume 2">
+                <h3>Vibrance</h3>
+                <p>Fresh and invigorating.</p>
+            </div>
+            <div class="perfume">
+                <img src="image3.jfif" alt="Perfume 3">
+                <h3>Serenity</h3>
+                <p>Calm and soothing.</p>
+            </div>
+            <div class="perfume">
+                <img src="image5.avif" alt="Perfume 4">
+                <h3>Intensity</h3>
+                <p>Bold and powerful.</p>
+            </div>
+            <div class="perfume">
+                <img src="image4.webp" alt="Perfume 5">
+                <h3>Romance</h3>
+                <p>Sweet and enchanting.</p>
+            </div>
+            <div class="perfume">
+                <img src="image13.jpg" alt="Perfume 6">
+                <h3>Passion</h3>
+                <p>Fiery and passionate.</p>
+            </div>
+            <!-- Add more perfume items as needed -->
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p> Welcome to Senses Essence, your go-to destination for discovering exquisite perfumes that match your personality.We are passionate about creating exquisite fragrances that resonate with your soul. Discover the perfect scent that speaks to you. Our collection is carefully curated to offer a wide range of fragrances, each designed to evoke different moods and memories. Whether you seek elegance, vibrance, serenity, or intensity, we have something that resonates with your unique essence.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>At Senses Essence, we offer personalized fragrance consultations to help you find your perfect scent. Our experts are here to guide you through our collection and provide insights into the notes and compositions of each perfume. We also offer exclusive gift wrapping and customization services, ensuring that your purchase is as special as the fragrance itself.</p>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+  </section>
+  <section id= "contact" class="contact container">
+    <h2>Registration</h2>
+    <form acion="submit_contact.php" method="post">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email">
+
+      <label for ="product">Product Name:</label><br>
+      <input type="text" id="product name" product name="product name">
+      
+      <label for="check in">Check in:</label><br>
+      <input type="text">
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Senses Essence</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle the modal display
+        window.onload = function() {
+            var modal = document.getElementById("modal");
+            var closeBtn = document.getElementById("close-btn");
+
+            // Show the modal on page load
+            modal.style.display = "block";
+
+            // Close the modal when the close button is clicked
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // Close the modal if the user clicks outside the modal content
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
