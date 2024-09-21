@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Modal Overlay -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span id="close-btn">&times;</span>
@@ -28,14 +27,12 @@
     </header>
 
     <main>
-        <!-- Banner Section -->
         <section id="home">
             <div class="banner">
-                <img src="ig.png" alt="Banner Image">
+                <a href="order.html"><img src="ig.png" alt="Banner Image"></a>
             </div>
         </section>
 
-        <!-- Perfume Collection -->
         <section class="collection">
             <div class="perfume">
                 <img src="image11.jpg" alt="Perfume 1">
@@ -67,22 +64,21 @@
                 <h3>Passion</h3>
                 <p>Fiery and passionate.</p>
             </div>
-            <!-- Add more perfume items as needed -->
         </section>
 
         <section id="about">
             <h2>About Us</h2>
-            <p> Welcome to Senses Essence, your go-to destination for discovering exquisite perfumes that match your personality.We are passionate about creating exquisite fragrances that resonate with your soul. Discover the perfect scent that speaks to you. Our collection is carefully curated to offer a wide range of fragrances, each designed to evoke different moods and memories. Whether you seek elegance, vibrance, serenity, or intensity, we have something that resonates with your unique essence.</p>
+            <p>Welcome to Senses Essence, your go-to destination for discovering exquisite perfumes that match your personality. Our collection offers a wide range of fragrances designed to evoke different moods and memories, ensuring you'll find the perfect scent that resonates with your unique essence.</p>
         </section>
 
         <section id="services">
             <h2>Our Services</h2>
-            <p>At Senses Essence, we offer personalized fragrance consultations to help you find your perfect scent. Our experts are here to guide you through our collection and provide insights into the notes and compositions of each perfume. We also offer exclusive gift wrapping and customization services, ensuring that your purchase is as special as the fragrance itself.</p>
+            <p>We offer personalized fragrance consultations, exclusive gift wrapping, and customization services to make your purchase as special as the fragrance itself.</p>
         </section>
 
         <section id="contact" class="contact container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
+            <p>If you have any questions, please contact us using the form below:</p>
             <form action="submit_contact.php" method="post">
                 <label for="name">Your Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
@@ -96,7 +92,6 @@
                 <input type="submit" value="Send Message">
             </form>
         </section>
-  </section>
     </main>
 
     <footer>
@@ -104,20 +99,16 @@
     </footer>
 
     <script>
-        // JavaScript to handle the modal display
         window.onload = function() {
             var modal = document.getElementById("modal");
             var closeBtn = document.getElementById("close-btn");
 
-            // Show the modal on page load
             modal.style.display = "block";
 
-            // Close the modal when the close button is clicked
             closeBtn.onclick = function() {
                 modal.style.display = "none";
             }
 
-            // Close the modal if the user clicks outside the modal content
             window.onclick = function(event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
@@ -127,7 +118,3 @@
     </script>
 </body>
 </html>
-
-
-
-
